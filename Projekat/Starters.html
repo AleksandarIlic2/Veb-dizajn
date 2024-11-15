@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starters</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jelovnikPS.js"></script>
+    <style>
+    
+        .carousel-item img {
+        width: 100%; 
+        height: auto; 
+        max-height: 300px; 
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <div class="row">
+                <div class="col-4">
+                    <div style="text-align: left;">
+                        <img src="logo.jpeg" style="width: 80px; padding-bottom: 15px;" class="rounded-pill">
+                    </div> 
+                </div>
+                <div class="col-2">          
+                    <h2 style="color: white; font-size: 35px; font-style: oblique;">TheSmellOfChina</h2>
+                </div>
+            </div>
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <ul class="meni"><li><a href="indexEng.html">Home</a></li></ul>
+                <ul class="meni"><li><a href="About.html">About</a></li></ul>
+                <ul class="meni"><li><a href="Gallery.html">Gallery</a></li></ul>
+                <ul class="meni">
+                    <li><a href="Menu.html">Menu</a></li>
+                </ul>
+                <ul class="meni"><li><a href="MyAcc.html">My Account</a></li></ul>
+         
+                <li> <a href = "Predjela.html">  <img src = "s1.jpeg" style="width: 40px; height: 33px;"> </a> </li>
+                <li> <a href = "Starters.html">  <img src = "s2.jpg" style="width: 40px; height: 30px;">  </a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <section class="sekcijaPretraga">
+        <div class="row">
+            <div class="col-3 mt-2">
+                <ul class="breadcrumb" style="margin-left: 2%; margin-top: 2%;">
+                    <li class="breadcrumb-item"><a href="indexEng.html" style="color: azure; font-size: 20px;"> Home </a></li> 
+                    <li class="breadcrumb-item"><a href="Menu.html" style="color: azure; font-size: 20px;"> Menu </a></li> 
+                    <li class="breadcrumb-item"><a href="Starters.html" style="color: azure; font-size: 20px;"> Starters </a></li> 
+                </ul>        
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 mt-2">
+                <label for="naziv" style="color: azure; font-style: italic; font-size: 25px;">Sorted by name &nbsp;</label><input type="radio" name="nivo" id="naziv"> 
+            </div>
+
+            <div class="col-2 mt-2">
+                <label for="cena" style="color: azure; font-style: italic; font-size: 25px;">Sorted by price &nbsp;</label><input type="radio" name="nivo" id="cena">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-4"></div>
+            <div class="col-1">
+                <label for="pretraga" style="color: azure; font-style: italic; font-size: 25px;">Search dishes by name: &nbsp;<input type="text" name = "pretraga" id="pretraga"></label>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <label for="pretraga1" style="color: azure; font-style: italic; font-size: 25px;">Search dishes by price: &nbsp;<input type="text" name = "pretraga1" id="pretraga1"></label>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="sekcija1">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center; margin-top: 2%; margin-bottom: 0%;">
+                <h2> Click on the image to download the menu </h2>
+                <a href = "menu.pdf" download>
+                    <img src = "slike/jelovnik.png" alt = "jelovnik" style="width: 10%; height: 100%;"> 
+                </a>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <div class="row">
+        <div class="col-sm-12">
+
+        <section id="food-menu">
+        <h2 class="food-menu-heading">Starters</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <a href = "Starter1.html" > <img src="slike/Predjelo1.jpg" alt="" /> </a>
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Cold chicken with ginger sauce and dried hot peppers</h2>
+                    <p class="food-price">Price: 7$</p>
+                </div>
+            </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <a href = "Starter2.html" ><img src="slike/Predjelo2.jpg" alt="error" /></a>
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Spring rolls with vegetables and mushrooms</h2>
+                    <p class="food-price">Price: 9$</p>
+                </div>
+            </div>
+            <div class="food-menu-item" style="display: flex; justify-content: center;">
+                <div class="food-img" >
+                    <a href = "Starter3.html" > <img src="slike/Predjelo3.jpg" alt="" /></a>
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Fried spicy and sour potato</h2>
+                    <p class="food-price">Price: 8$ </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <h2>Copyright &copy; Sofija Martinovic and Aleksandar Ilic, Department of Software Engineering, School od Electrical Engineering, University of Belgrade  <br><br>
+            <a href="https://www.facebook.com/ZhengHeMNE/"><img src = "slike/baner1.png" style="width: 50px; height: 45px;" class="rounded-pill"></a> &nbsp;
+            <a href="https://www.zheng-he.me/"><img src = "slike/baner2.webp" style="width: 50px; height: 45px;" class="rounded-pill"></a> &nbsp;
+            <a href="https://www.etf.bg.ac.rs/"><img src = "slike/baner3.png" style="width: 50px; height: 45px;" class="rounded-pill"></a>
+        </h2>
+    </footer>
+</body>
+</html>
