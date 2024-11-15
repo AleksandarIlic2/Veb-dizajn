@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Uputsvo</title>
+    <link href = "tetris-dodatno/bootstrap.min.css" rel = "stylesheet">   
+    <script src="tetris-dodatno/jquery-3.7.1.min.js"></script>
+    <script src="tetris-dodatno/bootstrap.bundle.min.js"></script>
+    <link href = "style.css" rel = "stylesheet">
+    <script src="skripta.js"></script>
+</head>
+<body onload="inicijalizacijaUputstva()">
+    <h1> Tetris </h1>    
+    <div id = "stilizujUputstvo">
+        <div id = "tekstUputstva" class = "bg-secondary">
+            <div >       
+                <p>
+                    Tetris je igra u kojoj igrač koristi tastera da pomera blokove koji padaju sa vrha sa ciljem da 
+                    ih složi na način da između blokova ostane što manje praznog prostora. 
+                </p> 
+                <p>
+                    Kada se popuni ceo red - taj red nastaje, zatim se svi kvadratići iznad spuštaju u sledeći red
+                    i igrač dobija poen. Kako igra napreduje blokovi padaju sve brže. Igra se završava kada nema
+                    prostora da se sledeći blok prikaže, odnosno kad su blokovi nagomilani do vrha.  
+                </p>
+                
+        </div>
+        </div>
+    </div>
+    <div id = "stilizujSlike"> 
+        <div class="row" id = "row1">
+            <div class="col-sm-2">        
+                <label for = "Z">Z block</label> <input type="checkbox" name = "figura1" id = "Z" value = "Z"> <img src = "tetris-dodatno/slika1.png" id = "slika1">                             
+            </div>    
+            <div class="col-sm-2">        
+                <label for = "L">L block</label><input type="checkbox" name = "figura2" id = "L" value = "L"><img src = "tetris-dodatno/slika2.png" id = "slika2">
+            </div> 
+            <div class="col-sm-2">        
+                <label for = "I">I block</label><input type="checkbox" name = "figura3" id = "I" value = "I"><img src = "tetris-dodatno/slika5.png" id = "slika3">
+            </div> 
+            <div class="col-sm-2">        
+                <label for = "T">T block</label><input type="checkbox" name = "figura4" id = "T" value = "T"><img src = "tetris-dodatno/slika6.png" id = "slika4">
+            </div> 
+            
+        </div>
+    </div>
+
+    <div id = "stilizujSlike2"> 
+        <div class="row" id = "row2">
+            <div class="col-sm-2">        
+                <label for = "O">O block</label> <input type="checkbox" name = "figura5" id = "O" value = "O"><img src = "tetris-dodatno/slika8.png" id = "slika5">                                
+            </div>
+    
+            <div class="col-sm-2">        
+                <label for = "S"> S block</label><input type="checkbox" name = "figura6" id = "S" value = "S"><img src = "tetris-dodatno/slika9.png" id = "slika6">                                
+            </div> 
+            <div class="col-sm-2">        
+                <label for = "J"> J block</label><input type="checkbox" name = "figura7" id = "J" value = "J"><img src = "tetris-dodatno/slika12.png" id = "slika7">                                
+            </div>            
+            
+        </div>
+    </div>
+
+    <div row id = "row3">
+        <h7>Nivo: &nbsp; </h7>  
+          <select id = "selectId">
+            <option> Lako </option>
+            <option> Srednje </option>
+            <option> Tesko </option>
+        </select>
+    </div>
+
+    <div row id = "row3">
+            <div class = "col-sm-2" id = "dugmeZaPocetakIgre">
+                <input type = "button" class = "btn btn-success" value = "Startuj igru!" onclick="prebaciNaDruguStranicu()">
+            </div>
+            <div class = "col-sm-2" id = "dugmeZaPregledRezultata">
+                <input type = "button" class = "btn btn-success" value = "Pogledaj rezultate!" onclick="prebaciNaRezultate()">
+            </div>
+
+      
+    </div>
+  
+
+
+
+    </div>
+
+  
+   
+</body>
+
+</html>
